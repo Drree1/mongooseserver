@@ -15,9 +15,9 @@ const Recipe = mongoose.model("Recipe", recipeSchema);
 
 const createRecipe = async () => {
   const recipe = new Recipe({
-    name: "Banana",
-    description: "So Yummmy",
-    ingredients: ["bananas", "flour", "sugar"],
+    name: "Prisma Health",
+    description: "Fried Chicken",
+    ingredients: ["buttermilk", "paprika", "salt and pepper"],
   });
 
   const result = await recipe.save();
